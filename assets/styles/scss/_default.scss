@@ -1,0 +1,14 @@
+// default
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+#wrap {
+	position: absolute;
+	top: 0;
+	min-height: 512px;
+	min-width: 960px;
+}

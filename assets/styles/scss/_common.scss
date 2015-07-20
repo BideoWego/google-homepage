@@ -1,0 +1,72 @@
+// common
+
+// --------------------
+// clearfix
+// --------------------
+
+.clearfix:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+@mixin clearfix() {
+	@extend .clearfix;
+}
+
+// --------------------
+// left
+// --------------------
+
+.left {
+	float: left;
+}
+
+@mixin left() {
+	@extend .left;
+}
+
+// --------------------
+// right
+// --------------------
+
+.right {
+	float: right;
+}
+
+@mixin right() {
+	@extend .right;
+}
+
+// --------------------
+// container
+// --------------------
+
+.container {
+	@include clearfix;
+	width: 100%;
+}
+
+@mixin container() {
+	@extend .container;
+}
+
+// --------------------
+// button
+// --------------------
+
+.btn {
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+	background: #999;
+	display: inline-block;
+}
+
+a.btn {
+	text-decoration: none !important;
+}
+
+@mixin btn() {
+	@extend .btn;
+}

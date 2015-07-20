@@ -1,0 +1,33 @@
+// title
+
+$title-colors: (
+	$blue,
+	$red,
+	$green,
+	$red,
+	$yellow,
+	$blue,
+	$green,
+	$red
+);
+
+@mixin color-title($title-colors:()) {
+	$i: 1;
+	@each $color in $title-colors {
+		#title span:nth-child(#{$i}) {
+			color: $color;
+		}
+		$i: $i + 1;
+	}
+}
+
+@include color-title($title-colors);
+
+#title {
+	font-size: 5.5em;
+	letter-spacing: -10px;
+	font-family: Catull, sans-serif;
+	text-align: center;
+	margin: 0 0 0.5em 0;
+	padding: 0;
+}

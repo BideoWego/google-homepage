@@ -1,0 +1,26 @@
+// menu
+
+.menu {
+	@include clearfix;
+	@extend .container;
+	position: fixed;
+	padding: 1em;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #000;
+	&:hover {
+		text-decoration: underline;
+	}
+	font-size: 13px;
+	margin-left: 8px;
+}
+
+.menu ul li{
+	display: inline;
+}
+
+@mixin menu() {
+	@extend .menu;
+}
