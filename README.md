@@ -10,3 +10,4 @@ An exercise to clone the style of the Google search home page. I mean Chroogle..
 	`$ cd path/to/the/cloned/repo`
 1. Start up a quick PHP server to serve the CSS
 	`$ php -S localhost:3000 -t . `
+1. Open the page in the browser `http://localhost:3000`
